@@ -1,7 +1,13 @@
+GIT
+  remote: git@github.com:solanolabs/dw-client.git
+  revision: 6993929c464e01bf9591809406965eafe4a8fd6b
+  specs:
+    dw-client (0.0.4)
+
 PATH
   remote: .
   specs:
-    solano (1.26.2)
+    solano (1.26.3)
       addressable
       github_api
       highline
@@ -14,7 +20,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.6)
+    addressable (2.3.7)
     antilles (0.1.4)
       bundler
       daemons
@@ -49,7 +55,7 @@ GEM
     ffi (1.9.6)
     gherkin (2.12.2)
       multi_json (~> 1.3)
-    github_api (0.12.2)
+    github_api (0.12.3)
       addressable (~> 2.3)
       descendants_tracker (~> 0.0.4)
       faraday (~> 0.8, < 0.10)
@@ -57,7 +63,7 @@ GEM
       multi_json (>= 1.7.5, < 2.0)
       nokogiri (~> 1.6.3)
       oauth2
-    hashie (3.3.2)
+    hashie (3.4.0)
     highline (1.6.21)
     httparty (0.9.0)
       multi_json (~> 1.0)
@@ -131,6 +137,7 @@ DEPENDENCIES
   aruba (= 0.4.6)
   cucumber
   daemons
+  dw-client!
   fakefs
   httparty (= 0.9.0)
   httpclient (= 2.4.0)
