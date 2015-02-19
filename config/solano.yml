@@ -1,5 +1,24 @@
 ruby_version: 'ruby-1.9.3-p545'
 bundler_version: 1.3.5
+
+coverage: true
+
+# NOTE: The config of API vars in here is temporary.  They will be set in
+#       the Solano environment once integrated.  Initial testing doing it
+#       this way should allow validation of the login via ID/SECRET and then
+#       the DW_API_TOKEN will be set to the same value upon create session.
+#
+#       User DW_API_TOKEN_TDDIUM_SESSION_ID to generate a unique token client side
+#       for each run.
+environment:
+  SOLANO_DW_HOSTNAME: solano-dw-poc.herokuapp.com
+
+hooks:
+  pre_setup: "bundle exec create_session $TDDIUM_SESSION_ID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_AUTH_ID $DW_API_AUTH_SECRET $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
+  worker_setup: "bundle exec rake db:create db:setup && bundle exec create_worker $TDDIUM_SESSION_ID $TDDIUM_TID $SOLANO_DW_HOSTNAME $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
+  post_worker: "bundle exec upload_simplecov_data $TDDIUM_SESSION_ID $TDDIUM_TID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
+  post_build: "bundle exec perform_simplecov_merge $TDDIUM_SESSION_ID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
+
 test_pattern:
   - features/*.feature
   - spec/**_spec.rb
