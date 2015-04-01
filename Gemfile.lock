@@ -2,7 +2,7 @@ GIT
   remote: git@github.com:solanolabs/dw-client.git
   revision: 6993929c464e01bf9591809406965eafe4a8fd6b
   specs:
-    dw-client (0.0.4)
+    dw-client (0.1.3)
 
 PATH
   remote: .
