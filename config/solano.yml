@@ -12,10 +12,18 @@ coverage: true
 #       for each run.
 environment:
   SOLANO_DW_HOSTNAME: solano-dw-poc.herokuapp.com
+  DW_API_AUTH_ID: 09baac47fb0bcd92
+  DW_API_AUTH_SECRET: muZxCjpD4y6rHSO_oK2ysh5bXIOmukqGWqIKnLs2S30
+  DW_API_TOKEN: 79f4beb4ae6fb9c4
 
+#
+# NOTES:
+# 1) The token will need to come from a Solano environment variable or service.  It is currently
+#    generated inline using the seed above plus the TDDIUM_SESSION_ID
+#
 hooks:
-  pre_setup: "bundle exec create_session $TDDIUM_SESSION_ID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_AUTH_ID $DW_API_AUTH_SECRET $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
-  worker_setup: "bundle exec create_worker $TDDIUM_SESSION_ID $TDDIUM_TID $SOLANO_DW_HOSTNAME $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
+  pre_setup: "bundle exec create_session $TDDIUM_SESSION_ID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_AUTH_ID $DW_API_AUTH_SECRET -t $DW_API_TOKEN'_'$TDDIUM_SESSION_ID -d 30"
+  worker_setup: "bundle exec rake db:create db:setup && bundle exec create_worker $TDDIUM_SESSION_ID $TDDIUM_TID $SOLANO_DW_HOSTNAME $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
   post_worker: "bundle exec upload_simplecov_data $TDDIUM_SESSION_ID $TDDIUM_TID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
   post_build: "bundle exec perform_simplecov_merge $TDDIUM_SESSION_ID $SOLANO_DW_HOSTNAME $TDDIUM_REPO_ROOT $DW_API_TOKEN'_'$TDDIUM_SESSION_ID"
 
