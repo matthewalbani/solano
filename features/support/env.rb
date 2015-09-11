@@ -2,7 +2,7 @@
 require 'simplecov'
 SimpleCov.command_name 'cucumber'
 SimpleCov.merge_timeout 3600
-SimpleCov.start unless SimpleCov.runni
+SimpleCov.start unless SimpleCov.running
 
 require 'rubygems'
 require 'aruba/cucumber'
