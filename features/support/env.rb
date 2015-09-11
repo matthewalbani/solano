@@ -1,4 +1,8 @@
 # Copyright (c) 2011, 2012, 2013, 2014 Solano Labs All Rights Reserved
+require 'simplecov'
+SimpleCov.command_name 'cucumber'
+SimpleCov.merge_timeout 3600
+SimpleCov.start unless SimpleCov.runni
 
 require 'rubygems'
 require 'aruba/cucumber'
@@ -10,6 +14,4 @@ def prepend_path(path)
 end
 
 prepend_path('bin')
-#ENV['COVERAGE'] = "true"
-ENV['COVERAGE_ROOT'] = "#{File.expand_path(File.dirname(__FILE__) + '/../../')}"
 
