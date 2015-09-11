@@ -1,9 +1,8 @@
 # Copyright (c) 2011, 2012, 2013, 2014 Solano Labs All Rights Reserved
 
 require 'simplecov'
-SimpleCov.command_name 'RSPEC'
 SimpleCov.merge_timeout 3600
-SimpleCov.start unless SimpleCov.running
+SimpleCov.start
 
 require 'solano'
 
