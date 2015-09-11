@@ -2,6 +2,7 @@
 
 require 'simplecov'
 SimpleCov.merge_timeout 3600
+SimpleCov.command_name "RSpec #{rand(100000)}"
 SimpleCov.start
 
 require 'solano'
