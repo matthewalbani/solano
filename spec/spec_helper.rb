@@ -1,9 +1,11 @@
 # Copyright (c) 2011, 2012, 2013, 2014 Solano Labs All Rights Reserved
 
 require 'simplecov'
-SimpleCov.merge_timeout 3600
-SimpleCov.command_name "RSpec #{rand(100000)}"
-SimpleCov.start
+SimpleCov.merge_timeout 3600 #must be longer then suite run time
+SimpleCov.command_name "RSpec #{rand(100000)}" #make sure there is no overlap
+SimpleCov.start do
+  add_filter 'spec/'
+end
 
 require 'solano'
 
