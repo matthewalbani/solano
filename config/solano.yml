@@ -3,7 +3,7 @@ bundler_version: 1.10.6
 coverage2:
   ratchet: 80
 test_pattern:
- - features/*.feature
+# - features/*.feature
  - spec/**_spec.rb
 test_exclude_pattern:
   - spec/agent_spec.rb
