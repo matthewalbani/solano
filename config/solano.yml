@@ -1,7 +1,5 @@
 ruby_version: 'ruby-1.9.3-p545'
 bundler_version: 1.10.6
-coverage2:
-  ratchet: 80
 test_pattern:
 # - features/*.feature
  - spec/**_spec.rb
