@@ -14,9 +14,7 @@ you push to a shared branch.
 as
 The `solano` gem implements aas command line interface for you to start
 a parallel run from your local git workspace, along with ways to edit
-configuration and retrieve your account status all from within your
-terminal.
-cats
+configuration and retrieve your account status all from within yourteasad
 Old gem version https://github.com/assolanolabs/tddium
 
 == Getting Started
