@@ -11,7 +11,7 @@ production environments.
 
 Solano CI also supports parallel test running in our cloud even beforeas
 you push to a shared branch.
-as
+asas
 The `solano` gem implements aas command line interface for you to sastart
 a parallel run from your local git workspace, along with ways to edit
 configuration and retrieve your account status all from within yourteasad
