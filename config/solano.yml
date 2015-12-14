@@ -6,7 +6,6 @@ coverage:
   enabled: true
 bundler_version: 1.10.6
 test_pattern:
-  - features/*.feature
   - spec/**_spec.rb
 test_exclude_pattern:
   - spec/agent_spec.rb
