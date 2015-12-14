@@ -18,7 +18,7 @@ configuration and retrieve your account status all from within your
 terminal.
 
 Old gem version https://github.com/solanolabs/tddium
-
+dem cats
 == Getting Started
 
 See http://docs.solanolabs.com for more information.
