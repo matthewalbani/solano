@@ -38,6 +38,7 @@ module Solano
         warn(Text::Warning::SCM_CHANGES_NOT_COMMITTED)
       end
 
+
       test_execution_params = {}
 
       if user_data_file_path = options[:user_data_file] then
@@ -51,10 +52,18 @@ module Solano
         end
       end
 
+
+
+
       if max_parallelism = options[:max_parallelism] then
         test_execution_params[:max_parallelism] = max_parallelism
         say Text::Process::USING_SPEC_OPTION[:max_parallelism] % max_parallelism
       end
+
+
+
+
+
 
       test_execution_params[:tag] = options[:tag] if options[:tag]
       test_pattern = nil
@@ -87,7 +96,7 @@ module Solano
           say Text::Process::SCM_REPO_WAIT
           sleep @api_config.scm_ready_sleep
         end
-        
+
         tries += 1
       end
       exit_failure Text::Error::SCM_REPO_NOT_READY unless suite_details["repoman_current"]
@@ -95,14 +104,14 @@ module Solano
       update_suite_parameters!(suite_details, options[:session_id])
 
       start_time = Time.now
-      
+
       new_session_params = {
         :commits_encoded => read_and_encode_latest_commits,
         :cache_control_encoded => read_and_encode_cache_control,
         :cache_save_paths_encoded => read_and_encode_cache_save_paths,
         :raw_config_file => read_and_encode_config_file
       }
-      
+
       if options[:profile]
         if  options[:session_id].nil?
           say Text::Process::USING_PROFILE % options[:profile]
@@ -136,11 +145,22 @@ module Solano
 
       machine_data[:session_id] = session_id
 
+      puts test_pattern
+      puts test_exclude_pattern
+      puts "@@@@@@@@"
       # Register the tests
       @solano_api.register_session(session_id, @solano_api.current_suite_id, test_pattern, test_exclude_pattern)
 
       # Start the tests
+
+      puts test_execution_params
+      puts "@@@@@@@@"
       start_test_executions = @solano_api.start_session(session_id, test_execution_params)
+
+
+
+
+
       num_tests_started = start_test_executions["started"].to_i
 
       say Text::Process::STARTING_TEST % num_tests_started.to_s
@@ -162,8 +182,8 @@ module Solano
       end
 
       say ""
-      say Text::Process::CHECK_TEST_REPORT % report 
-      say Text::Process::TERMINATE_INSTRUCTION 
+      say Text::Process::CHECK_TEST_REPORT % report
+      say Text::Process::TERMINATE_INSTRUCTION
       say ""
 
       # Catch Ctrl-C to interrupt the test
@@ -187,7 +207,7 @@ module Solano
         current_test_executions["tests"].each do |test_name, result_params|
           if finished_tests.size == 0 && result_params["finished"] then
             say ""
-            say Text::Process::CHECK_TEST_REPORT % report 
+            say Text::Process::CHECK_TEST_REPORT % report
             say Text::Process::TERMINATE_INSTRUCTION
             say ""
           end
@@ -282,7 +302,7 @@ module Solano
     end
 
     def read_and_encode_cache_control
-      cache_key_paths = cache_control_config['key_paths'] || cache_control_config[:key_paths] 
+      cache_key_paths = cache_control_config['key_paths'] || cache_control_config[:key_paths]
       cache_key_paths ||= ["Gemfile", "Gemfile.lock", "requirements.txt", "packages.json", "package.json"]
       cache_key_paths.reject!{|x| x =~ /(solano|tddium).yml$/}
       cache_control_data = {}

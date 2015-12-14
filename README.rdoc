@@ -11,14 +11,15 @@ production environments.
 
 Solano CI also supports parallel test running in our cloud even before
 you push to a shared branch.
-
+dem cats
 The `solano` gem implements a command line interface for you to start
 a parallel run from your local git workspace, along with ways to edit
-configuration and retrieve your account status all from within your
+configuration and retrieve your account status all from within your whyyyy
+
 terminal.
 cats
 Old gem version https://github.com/solanolabs/tddium
-
+dem cats
 == Getting Started
 
 See http://docs.solanolabs.com for more information.
