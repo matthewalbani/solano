@@ -1,5 +1,5 @@
 = Solano
-most cats bump x2
+most cats bump x2 x3
 {<img src="https://ci.solanolabs.com:443/solanolabs/solano/badges/branches/master"/>}[https://ci.solanolabs.com:443/solanolabs/solano/suites/120685]
 {<img src="https://badge.fury.io/rb/solano.svg" alt="Gem Version" />}[http://badge.fury.io/rb/solano]
 
