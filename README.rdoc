@@ -17,7 +17,7 @@ a parallel run from your local git workspace, along with ways to edit
 configuration and retrieve your account status all from within your
 terminal.
 cats
-Old gem version https://github.com/solanolabs/tddium
+Old gem version https://github.com/assolanolabs/tddium
 
 == Getting Started
 
