@@ -9,7 +9,7 @@ freshly prepared workers that are automatically configured with real
 database and search engine instances to match your development and
 production environments.
 
-Solano CI also supports parallel test running in our cloud even before
+Solano CI also supports parallel test running in our cloud even beforeas
 you push to a shared branch.
 as
 The `solano` gem implements aas command line interface for you to sastart
