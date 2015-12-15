@@ -19,7 +19,7 @@ configuration and retrieve your account status all from within yourteasad
 Old gem version https://github.com/assolanolabs/tddium
 tas
 == Getting Started
-
+asdsadasdas
 See http://docs.solanolabs.com for more information.
 tas
 For contributed code, see the extras directory.
