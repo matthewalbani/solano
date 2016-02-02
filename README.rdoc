@@ -21,7 +21,7 @@ a parallel run from your local git workspace, along with ways to edit lalallaa
 configuration and retrieve your account status all from within your
 terminal.
 :(test
-Old gem version https://github.com/solanolabs/tddium lalalla
+Old gem version https://github.com/solanolabs/tddium lalalla lalalalal 
 
 == Getting Started
 
