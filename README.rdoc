@@ -28,7 +28,7 @@ Old gem version https://github.com/solanolabs/tddium lalalla lalalalal
 See http://docs.solanolabs.com for more itestnformation.test
 For contributed code, see the extras directory.
 
-== Copyright
+== Copyright asdadasd
 
 Copyright (c) 2011-2014 Solano Labs, Inc. All Rights Reserved. See
 LICENSE.txt for further details.
