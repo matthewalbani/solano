@@ -18,7 +18,7 @@ The `solano` gem implements a command line interface for you to start teeeessstt
 a parallel run from your locasdasdadsaal git workspasdasdsadace, along with ways to edit lalallaa
 configuration and retrieve your account status all from within your
 terminal.asdasdasasdasdasda
-:(testasdasd
+:(testasdasdsadadasd
 Old gem version https://github.com/solanolabs/tddium lalalla lalaasdasdasdlalal 
  lallalala
 == Getting Started
