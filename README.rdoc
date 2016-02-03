@@ -19,7 +19,7 @@ a parallel run from your locasdasdadsaal git workspasdasdsaasdasdsddace, alongas
 configuration and retrieve your account status all from within your
 terminal.asdasdasasdasdasdasadasdasdasdasdad
 :(testasdasdsadadasdasdaa
-Old gem version https://github.com/solanolabs/tddium lalalla
+Old gem version https://github.com/solanolabs/tddium
  lallalala
 == Getting Started
 asdasdsad
