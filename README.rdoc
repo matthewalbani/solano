@@ -14,7 +14,7 @@ database and search engine instances to match your development and
 production environments.asdasdbeforeasdasd
 you push to a shared branch.
 test
-The `solano` gem implements a command line interface for you to start
+The `solano` gem implements a command line interface for you to start teeeessstttt
 a parallel run from your locasdasdadsaal git workspasdasdsadace, along with ways to edit lalallaa
 configuration and retrieve your account status all from within your
 terminal.asdasdasasdasdasda
