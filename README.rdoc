@@ -18,7 +18,7 @@ terminal.
 
 Old gem version https://github.com/solanolabs/tddium
 
-== Getting Started
+== Getting Startedas
 
 See http://docs.solanolabs.com for more information.
 
