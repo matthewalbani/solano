@@ -12,7 +12,7 @@ and test suites in the cloud, in parallel.  Your tests run isolated inasdasd
 freshly prepared workers that are automatically configured with real
 database and search engine instances to match your development and
 production environments.asdasdbeforeasdasd
-you push to a shared branch.
+you push to a shared branch.asdasd
 test
 The `solano` gem implements a command line interface for you to start teeeessstttt
 a parallel run from your locasdasdadsaal git workspasdasdsadace, along with ways to edit lalallaa
