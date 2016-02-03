@@ -13,7 +13,7 @@ you push to a shared branch.
 :( :(
 The `solano` gem implements a command line interface for you to start
 a parallel run from your local git workspace, along with ways to edit
-configuration and retrieve your account status all from within your
+configuration and retrieve your account statussa all from within your
 terminal.
 
 Old gem version https://github.com/solanolabs/tddium
