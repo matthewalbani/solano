@@ -15,7 +15,7 @@ production environments.asdasdbefore
 you push to a shared branch.
 test
 The `solano` gem implements a command line interface for you to start
-a parallel run from your local git workspace, along with ways to edit lalallaa
+a parallel run from your locasdasdadsaal git workspace, along with ways to edit lalallaa
 configuration and retrieve your account status all from within your
 terminal.asdasdasasdasdasda
 :(testasdasd
