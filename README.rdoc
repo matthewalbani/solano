@@ -20,7 +20,7 @@ configuration and retrieve your account status all from within your
 terminal.
 :(
 Old gem version https://github.com/solanolabs/tddium
- lallalala
+
 == Getting Started
 asdasdsad
 == Copyright asdadasd
