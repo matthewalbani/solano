@@ -17,3 +17,4 @@ cache:
     - Gemfile.lock
     - solano.gemspec
     - lib/solano/version.rb
+
