@@ -1,7 +1,7 @@
 # Copyright (c) 2011, 2012, 2013, 2014, 2015 Solano Labs All Rights Reserved
 
 require "./lib/solano/version"
-
+      
 Gem::Specification.new do |s|
   s.name        = "solano"
   s.version     = Solano::VERSION
