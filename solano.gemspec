@@ -2,8 +2,6 @@
 
 
 
-
-
 require "./lib/solano/version"
 
 Gem::Specification.new do |s|
