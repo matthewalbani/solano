@@ -12,8 +12,7 @@ Solano CI also supports parallel test running in our cloud even before
 you push to a shared branch.
 :( :(
 The `solano` gem implements a command line interface for sasadwithin your
-terminal.
-
+terminal
 
 
 Old gem version https://github.com/solanolabs/tddium
