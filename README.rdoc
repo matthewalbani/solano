@@ -16,11 +16,15 @@ terminal
 
 Old gem version https://github.com/solanolabs/tddium
 
+ohh this too
 == Getting Startedas
 
 See http://docs.solanolabs.com for more information.
 
 For contributed code, see the extras directory.
+
+
+who put this here?
 
 == Copyright
 
