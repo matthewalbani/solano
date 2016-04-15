@@ -19,11 +19,6 @@ Old gem version https://github.com/solanolabs/tddium
 == Getting Startedas
 
 
-
-
-
-
-
 For contributed code, see the extras directory.
 
 
