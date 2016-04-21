@@ -1,4 +1,6 @@
 ruby_version: 'ruby-1.9.3-p545'
+hooks:
+  pre_setup: echo 'pre_setup'
 coverage:
   version: 2
   enabled: true
@@ -17,4 +19,5 @@ cache:
     - Gemfile.lock
     - solano.gemspec
     - lib/solano/version.rb
+    
 
