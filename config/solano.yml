@@ -21,5 +21,7 @@ cache:
     - Gemfile.lock
     - solano.gemspec
     - lib/solano/version.rb
-    
+postgresql:
+  version: '9.2'
+  shards: 3
 
