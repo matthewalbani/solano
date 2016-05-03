@@ -11,6 +11,7 @@ test_exclude_pattern:
 tests:
   - bundle exec rspec spec/agent_spec.rb
   - echo "new test"
+  - git status
 cache:
   per_profile: true
   key_paths:
