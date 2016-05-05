@@ -17,7 +17,8 @@ profiles:
       - features/*.feature
       - spec/**_spec.rb
     test_exclude_pattern:
-          - spec/agent_spec.rb
+      - spec/agent_spec.rb
+      - features/suite_command_tddium_yml.feature
   plan2:
     tests:
       - echo 'test plan 2'
@@ -26,6 +27,7 @@ profiles:
       - spec/**_spec.rb
     test_exclude_pattern:
       - spec/agent_spec.rb  
+      - features/suite_command_tddium_yml.feature
   plan3:
     tests:
       - echo 'test plan 2'
