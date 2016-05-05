@@ -8,10 +8,26 @@ bundler_version: 1.10.6
 test_pattern:
   - features/*.feature
   - spec/**_spec.rb
-test_exclude_pattern:
-  - spec/agent_spec.rb
-tests:
-  - echo 'ho'
+plan:
+  - plan1
+  - plan2
+profiles:
+  plan1:
+    tests:
+    - echo 'test plan 1'
+    test_pattern:
+      - features/*.feature
+      - spec/**_spec.rb
+    test_exclude_pattern:
+          - spec/agent_spec.rb
+  plan2:
+    tests:
+      - echo 'test plan 2'
+    test_pattern:
+      - features/*.feature
+      - spec/**_spec.rb
+    test_exclude_pattern:
+      - spec/agent_spec.rb
 cache:
   per_profile: true
   key_paths:
