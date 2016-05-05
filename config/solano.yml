@@ -5,12 +5,10 @@ coverage:
   version: 2
   enabled: true
 bundler_version: 1.10.6
-test_pattern:
-  - features/*.feature
-  - spec/**_spec.rb
 plan:
   - plan1
   - plan2
+  - plan3
 profiles:
   plan1:
     tests:
@@ -21,6 +19,14 @@ profiles:
     test_exclude_pattern:
           - spec/agent_spec.rb
   plan2:
+    tests:
+      - echo 'test plan 2'
+    test_pattern:
+      - features/*.feature
+      - spec/**_spec.rb
+    test_exclude_pattern:
+      - spec/agent_spec.rb  
+  plan3:
     tests:
       - echo 'test plan 2'
     test_pattern:
